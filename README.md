@@ -6,6 +6,22 @@
 
 Python 3 is required. The program uses only Python's standard library, so no packages need to be installed.
 
+## Download ZIP
+
+If you don't want to use Git:
+
+1. Open the [9D-ARRAY repository](https://github.com/djambuken/9D-ARRAY).
+2. Click **Code > Download ZIP**.
+3. Extract the ZIP file.
+4. Open a terminal inside the extracted `9D-ARRAY` folder.
+5. Run:
+
+```sh
+python3 9darray.py
+```
+
+## Clone with Git
+
 Clone the repository and start the solver:
 
 ```sh
