@@ -4,11 +4,18 @@ import statistics
 
 ORANGE = "\033[38;5;208m"
 RED = "\033[31m"
+LIGHT_GREEN = "\033[92m"
+PINK = "\033[38;5;213m"
+PURPLE = "\033[38;5;141m"
+CYAN = "\033[96m"
+YELLOW = "\033[93m"
 RESET = "\033[0m"
 
 print(
     f"{ORANGE}#ENTER EXACTLY 9 NUMBERS "
-    f"{RED}SPACED BY COMMA OR ENTER RANDOM // 1,2,3,4,5,6,7,8,9{RESET}"
+    f"{RED}SPACED BY COMMA OR ENTER RANDOM // "
+    f"{LIGHT_GREEN}1{RESET},{PINK}2{RESET},{PURPLE}3{RESET},{CYAN}4{RESET},"
+    f"{YELLOW}5{RESET},{ORANGE}6{RESET},{RED}7{RESET},{LIGHT_GREEN}8{RESET},{PINK}9{RESET}"
 )
 
 entry = input("> ").strip()
@@ -39,8 +46,8 @@ def format_array(values):
     return ", ".join(f"{value:g}" for value in values)
 
 
-print("\n1. Entered order:   ", format_array(numbers))
-print("2. Ascending order: ", format_array(ascending))
-print("3. Descending order:", format_array(descending))
+print(f"\n{LIGHT_GREEN}1{RESET}. Entered order:   ", format_array(numbers))
+print(f"{PINK}2{RESET}. Ascending order: ", format_array(ascending))
+print(f"{PURPLE}3{RESET}. Descending order:", format_array(descending))
 print(f"Median: {statistics.median(numbers):g}")
 print(f"Range:  {max(numbers) - min(numbers):g}")

@@ -11,13 +11,13 @@ Clone the repository and start the solver:
 ```sh
 git clone https://github.com/djambuken/9D-ARRAY.git
 cd 9D-ARRAY
-python3 array_solver.py
+python3 9darray.py
 ```
 
 If the repository is already cloned, run it from the repository directory:
 
 ```sh
-python3 array_solver.py
+python3 9darray.py
 ```
 
 ## Example input
